@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Password Generator</h1>
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        <p> {{ form.password_length.label }} <br>
+            {{ form.password_length(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock content %}
